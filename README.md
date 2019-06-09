@@ -9,10 +9,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 sward to offer for interview...
 
 ### 2019-06-10
-
+> 二维数组查找
+[Q-4](./Q/q_4.c)
 
 ### 2019-06-09
->数组中重复的数字
+> 数组中重复的数字
 
 [Q-3](./Q/q_3.c)
 
