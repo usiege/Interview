@@ -8,13 +8,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 sward to offer for interview...
 
-### Q-3
+### 2019-06-10
+
+
+### 2019-06-09
 >数组中重复的数字
 
 [Q-3](./Q/q_3.c)
-
-
-###
 
 _________
 
