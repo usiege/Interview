@@ -37,3 +37,7 @@ void replaceBlank(char string[], int length) {
         --index_of_original;
     }
 }
+
+
+//回顾，这个算法的思路就是倒着进行复制，即先整体把握结果数组的大小
+//只是一个从前往后到从后往前的转换，思路一下就清晰了
