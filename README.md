@@ -9,7 +9,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 sward to offer for interview...
 
 
-### 
+### 2019-06-13
+> 从尾到头打印链表
+
+[Q-6-2](./Q/q_6_2.cpp)
 
 ### 2019-06-12
 > 链表初步
