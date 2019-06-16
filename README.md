@@ -9,6 +9,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 sward to offer for interview...
 
 
+
+### 2019-06-16
+> 这个题比较难，至少对于现在的我来说是；
+> 用一个前序和中序的序列对二叉树进行重建；
+> 前序和中序的当然是数组啦，生成的是指针的结构；
+> 这样一来，我好像又有点思路了，不过有点麻烦；
+
+[Q-7](./Q/q_7.cpp)
+
 ### 2019-06-13
 > 从尾到头打印链表
 
