@@ -6,11 +6,20 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## Questions
 
-sward to offer for interview...
+Sward to offer for interview...
 
+### 2019-06-19
+> 用两个栈实现队列
 
+[Q-9](./Q/q_9.cpp)
+
+### 2019-06-17
+> 二叉树的下一个节点
+
+[Q-8](./Q/q_8.cpp)
 
 ### 2019-06-16
+> ** 标双星 **
 > 这个题比较难，至少对于现在的我来说是；
 > 用一个前序和中序的序列对二叉树进行重建；
 > 前序和中序的当然是数组啦，生成的是指针的结构；

@@ -7,6 +7,8 @@ struct BinaryTreeNode
 };
 
 //根据前序遍历序列和中序遍历序列重建二叉树
+// preorder {1, 2, 4, 7, 3, 5, 6, 8}
+// inorder {4, 7, 2, 1, 5, 3, 8, 6}
 BinaryTreeNode* construct(int* preorder, int* inorder, int length)
 {
     if (preorder == nullptr || inorder == nullptr || length <= 0) {
@@ -19,8 +21,8 @@ BinaryTreeNode* construct(int* preorder, int* inorder, int length)
 
 BinaryTreeNode* constructCore
 (
-    int* startPreorder, int* endPreorder,
-    int* startInorder, int* endInorder
+    int* startPreorder, int* endPreorder,   //前序开始与结束节点
+    int* startInorder, int* endInorder      //中序开始与结束节点
 )
 {
     //前序遍历序列的第一个数字是根节点的值
