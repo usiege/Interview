@@ -35,6 +35,8 @@ template<unsigned N, typename VType> struct Graph
 
     std::array<std::shared_ptr<VertexType>,N> vertexes;
     std::size_t next_empty_vertex;
+
+    //这里的邻接矩阵和邻接表尚未定义
     MatrixGraph<N> matrix;      //图的邻接矩阵
     ADJListGraph<N> adjList;    //图的邻接表
 
@@ -122,8 +124,116 @@ template<unsigned N, typename VType> struct Graph
     *
     * 如果添加的边是无效权重，则直接返回而不添加
 */
+    void add_edge(const EdgeTupleType& edge_tuple)
+    {
+        auto id1 = std::get<0>(edge_tuple);
+        auto id2 = std::get<1>(edge_tuple);
+
+        if (id1 < 0 || id1 >= N || id2 < 0 || id2 >= N) {
+            throw std::invalid_argument("add edge error:id must >=0 and < N");
+        }
+        if (!vertexes.at(id1) || !vertexes.at(id2)) {
+            throw std::invalid_argument("add edge error: vertex of id does not exist.");
+        }
+        if (std::get<2>(edge_tuple) == matrix.invalid_weight) {
+            return;
+        }
+
+        matrix.add_edge(edge_tuple);
+        adjList.add_edge(edge_tuple);
+    }
+
+    //!add_edges:添加一组边
+    /*!
+    * \param  begin:边容器的起始迭代器
+    * \param  end:边容器的终止迭代器
+    *
+    * 为了便于计算，添加边时并不是添加`Edge`类型，而是`std::tuple<VIDType,VIDType,EWeightType>`类型的值
+    *
+    * 在添加边时，同时向图的矩阵、图的邻接表中添加边
+    */
+    template<typename Iterator> void add_edges(const Iterator&begin ,const Iterator&end)
+    {
+
+        if(std::distance(begin,end)<=0)
+            return;
+        Iterator iter=begin;
+        while(iter!=end)
+        {
+            add_edge(*iter);
+            iter++;
+        }
+    }
+
+    //!adjust_edge:修改一条边的权重
+    /*!
+    * \param  id1:待修改边的第一个顶点
+    * \param  id2:待修改边的第二个顶点
+    * \param  wt:新的权重
+    *
+    * 修改边权重之前如果边指定的任何一个顶点无效，则抛出异常：
+    *
+    * - 如果指定的顶点`id`不在`[0,N)`之间，则无效
+    * - 如果不存在某个顶点与指定的顶点`id`相同，则无效
+    */
+    void adjust_edge(VIDType id1,VIDType id2,EWeightType wt)
+    {
+        if(id1<0||id1>=N||id2<0||id2>=N)
+            throw std::invalid_argument("adjust edge error:id must >=0 and <N.");
+        if(!vertexes.at(id1) || !vertexes.at(id2))
+            throw std::invalid_argument("adjust edge error: vertex of id does not exist.");
+        matrix.adjust_edge(id1,id2,wt);
+        adjList.adjust_edge(id1,id2,wt);
+    }
 
 
+    //!has_edge:返回图中指定顶点之间是否存在边
+    /*!
+    * \param id_from: 第一个顶点的`id`
+    * \param id_to: 第二个顶点的`id`
+    * \return  :第一个顶点和第二个顶点之间是否存在边
+    *
+    * 要求图的矩阵和图的邻接表都返回同样的结果
+    *
+    *  如果边指定的任何一个顶点无效，则抛出异常：
+    *
+    * - 如果指定的顶点`id`不在`[0,N)`之间，则无效
+    * - 如果不存在某个顶点与指定的顶点`id`相同，则无效
+    */
+    bool has_edge(VIDType id_from,VIDType id_to) const
+    {
+        if(id_from<0||id_from>=N||id_to<0||id_to>=N)
+            throw std::invalid_argument("has edge error:id must >=0 and <N.");
+        if(!vertexes.at(id_from) || !vertexes.at(id_to))
+            throw std::invalid_argument("has edge error: vertex of id does not exist.");
+       auto m=matrix.has_edge(id_from,id_to);
+       auto a=adjList.has_edge(id_from,id_to);
+       assert(matrix.has_edge(id_from,id_to)==adjList.has_edge(id_from,id_to));
+       return matrix.has_edge(id_from,id_to);
+    }
+
+    //!weight:返回图中指定顶点之间的边的权重
+    /*!
+    * \param id_from: 第一个顶点的`id`
+    * \param id_to: 第二个顶点的`id`
+    * \return  :第一个顶点和第二个顶点之间的边的权重
+    *
+    * 要求图的矩阵和图的邻接表都返回同样的结果
+    *
+    *  如果边指定的任何一个顶点无效，则抛出异常：
+    *
+    * - 如果指定的顶点`id`不在`[0,N)`之间，则无效
+    * - 如果不存在某个顶点与指定的顶点`id`相同，则无效
+    */
+    EWeightType weight(VIDType id_from,VIDType id_to) const
+    {
+        if(id_from<0||id_from>=N||id_to<0||id_to>=N)
+            throw std::invalid_argument("edge weight error:id must >=0 and <N.");
+        if(!vertexes.at(id_from) || !vertexes.at(id_to))
+            throw std::invalid_argument("edge weight error: vertex of id does not exist.");
+        assert(matrix.weight(id_from,id_to)==adjList.weight(id_from,id_to));
+        return matrix.weight(id_from,id_to);
+    }
 
 };
 
