@@ -8,6 +8,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+### 2019-06-24
+> 今天的代码略简，略简。。。
+
+[Q-10-2](./Q/q_10_2.cpp)
 
 ### 2019-06-20
 > 斐波那契数列
