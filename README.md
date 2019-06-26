@@ -8,6 +8,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+
+### 2019-06-25
+> 快速排序
+
+[Q-11](./Q/q_11.cpp)
+
 ### 2019-06-24
 > 今天的代码略简，略简。。。
 
@@ -67,7 +73,7 @@ Sward to offer for interview...
 ### 2019-06-08
 > 图的表示
 
-- [graph.h](./graph/graph.h)
+- [graph.h](./G/graph.h)
 
 _________
 
