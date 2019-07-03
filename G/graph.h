@@ -234,7 +234,6 @@ template<unsigned N, typename VType> struct Graph
         assert(matrix.weight(id_from,id_to)==adjList.weight(id_from,id_to));
         return matrix.weight(id_from,id_to);
     }
-
 };
 
 #endif

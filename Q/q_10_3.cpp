@@ -23,6 +23,9 @@ int partition(int data[], int length, int start, int end)
     int index = random_in_range(start, end); //这个函数产生一个start到end之前的随机数
     swap(&data[index], &data[end]);
 
+    //下面这个过程就是如果有比data[index]小的数，就换到index位置的前面
+    //注意下面的index跟上面选出来的index有区别
+
     int small = start - 1;
     for (index = start; index < end; index++) {
         if (data[index] < data[end]) {
@@ -56,5 +59,42 @@ void quickSort(int data[], int length, int start, int end)
 
     if (index < end) {
         quickSort(data, length, index + 1, end);
+    }
+}
+
+
+//*******************************************************************
+//接上面的快速排序
+//下面是一个排序算法
+//看不大懂，不知道想干什么，c++数组
+void sortAges(int ages[], int length)
+{
+    if (ages == nullptr || length <= 0) {
+        return;
+    }
+
+    const int oldestAge = 99;
+    int timesOfAge[oldestAge + 1];
+
+    for(int i = 0; i <= oldestAge; ++i)
+    {
+        timesOfAge[i] = 0;
+    }
+
+    for (size_t i = 0; i < length; i++) {
+        int age = ages[i];
+        if (age < 0 || age > oldestAge) {
+            throw new std::exception("age out of range.");
+        }
+
+        ++ timesOfAge[age];
+    }
+
+    int index = 0;
+    for (size_t i = 0; i < oldestAge; i++) {
+        for (size_t j = 0; j < timesOfAge[i]; j++) {
+            ages[index] = i;
+            ++index;
+        }
     }
 }
