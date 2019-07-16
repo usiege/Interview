@@ -8,6 +8,19 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+
+
+### 2019-07-16
+> leecode
+
+- 本周题目：169，260，378，409，462，504
+    - [169求众数](./L/169.md)
+    - [260位运算](./L/260.md)
+    - [378数组和矩阵](./L/378.md)
+    - [409最长回文串](./L/409.md)
+    - [462相遇问题](./L/462.md)
+    - [504进制转换](./L/504.md)
+
 ### 2019-07-09
 > leecode
 
