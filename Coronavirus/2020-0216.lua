@@ -47,5 +47,26 @@ PrintTree(tree)
 midSeq = {'d', 'b', 'h', 'e', 'i', 'a', 'f', 'c', 'g'}
 
 -- 树
+-- 找出中序遍历序列的下一个节点
+function GetNext( pNode )
+	if pNode == nil then return end
+	pNext = nil
+	if pNode.rchild ~= nil then
+		pRight = pNode.rchild
+		while pRight.lchild ~= nil do
+			pRight = pRight.lchild
+		end
+		pNext = pRight
+	elseif pNode.parent ~= nil then
+		pCurrent = pNode
+		pParent = pNode.parent
+		while pParent ~= nil and pCurrent == pParent.rchild do
+			pCurrent = pParent
+			pParent = pParent.parent
+		end
+		pNext = pParent
+	end
+	return pNext
+end
 
 
