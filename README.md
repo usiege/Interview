@@ -9,7 +9,23 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Sward to offer for interview...
 
 
-###
+
+### 2020-03
+
+- [Python习题](https://www.runoob.com/python3/python3-examples.html)
+- [2020-0315 ali面试题](./Offer/alibaba-0315.py)
+- [2020-0323 二分快速归并](./Offer/2020-0323.py)
+
+
+### 2020-02
+
+- [lua-tools](./Offer/tools.lua)
+- [2020-0207 实现单例](./Offer/2020-0207.lua)
+- [2020-0212 链表](./Offer/2020-0212.lua)
+- [2020-0216 二叉树](./Offer/2020-0216.lua)
+- [2020-0218 栈和队列](./Offer/2020-0218.lua)
+- [2020-0224 快速排序](./Offer/2020-0224.lua)
+
 
 ### 2019-07-25
 > leecode
