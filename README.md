@@ -15,7 +15,8 @@ Sward to offer for interview...
 - [Python习题](https://www.runoob.com/python3/python3-examples.html)
 - [2020-0315 ali面试题](./Offer/alibaba-0315.py)
 - [2020-0323 二分快速归并](./Offer/2020-0323.py)
-
+- [2020-0324 查找二三四个数](./Offer/2020-0324.py)
+- 
 
 ### 2020-02
 
@@ -25,7 +26,6 @@ Sward to offer for interview...
 - [2020-0216 二叉树](./Offer/2020-0216.lua)
 - [2020-0218 栈和队列](./Offer/2020-0218.lua)
 - [2020-0224 快速排序](./Offer/2020-0224.lua)
-
 
 ### 2019-07-25
 > leecode
