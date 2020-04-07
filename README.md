@@ -10,7 +10,8 @@ Sward to offer for interview...
 
 ### 2020-04
 
-
+- [2020-0407 Offer](./Offer/2020-0407.py)
+- [2020-0406 Offer18-21](./Offer/2020-0406.py)
 
 ### 2020-03
 
