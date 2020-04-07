@@ -8,6 +8,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+### 2020-04
+
 
 
 ### 2020-03
@@ -16,7 +18,6 @@ Sward to offer for interview...
 - [2020-0315 ali面试题](./Offer/alibaba-0315.py)
 - [2020-0323 二分快速归并](./Offer/2020-0323.py)
 - [2020-0324 查找二三四个数](./Offer/2020-0324.py)
-- 
 
 ### 2020-02
 
@@ -156,26 +157,6 @@ _________
 ## Others
 
 ### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
