@@ -61,7 +61,8 @@ namespace {
 union isa_t {
     isa_t() { }
     isa_t(uintptr_t value) : bits(value) { }
-
+    
+    
     Class cls;
     uintptr_t bits;
 #if defined(ISA_BITFIELD)
