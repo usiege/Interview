@@ -8,8 +8,24 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
-### 2020-05
+### 2020-07-27
 
+- [cocos2d 引擎发展历史](https://blog.csdn.net/gzylongxingtianxia/article/details/49885819)
+- [Cocos2d-历史](https://zhuanlan.zhihu.com/p/38443026)
+- [上面这个链接的英文版本](https://retro.moe/2017/04/16/cocos2d-in-a-glimpse/)
+- [Cocos产品动态](https://www.cocos.com/page/6?s&cat=41)
+
+- [github-cocos2d-x](https://github.com/usiege/cocos2d-x)
+- 
+
+### 2020-07-20
+
+- [VAO VBO VertexArray](https://blog.csdn.net/DY_1024/article/details/87272550)
+
+### 2020-07-19
+
+- [application、render server、opengl、core animation、gpu、显示器的关系](https://www.cnblogs.com/feng9exe/p/10339907.html)
+- [Runloop深入理解](https://blog.ibireme.com/2015/05/18/runloop/)
 
 
 ### 2020-04
