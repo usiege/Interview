@@ -8,6 +8,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+### 2020-07
+
+- [Cocos flapbook ref01](https://blog.csdn.net/leonqiu/article/details/78752894)
+- [Cocos flapbook ref02](https://blog.csdn.net/goichunhye11/article/details/50825126)
+
+
 ### 2020-05
 
 > mv coding to Keep-Coding rep, leave this rep to add some pdf
