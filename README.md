@@ -8,6 +8,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Sward to offer for interview...
 
+### 2020-07-28
+
+- [Cocos flapbook ref01](https://blog.csdn.net/leonqiu/article/details/78752894)
+- [Cocos flapbook ref02](https://blog.csdn.net/goichunhye11/article/details/50825126)
+
+
 ### 2020-07-27
 
 - [cocos2d 引擎发展历史](https://blog.csdn.net/gzylongxingtianxia/article/details/49885819)
@@ -27,6 +33,13 @@ Sward to offer for interview...
 - [application、render server、opengl、core animation、gpu、显示器的关系](https://www.cnblogs.com/feng9exe/p/10339907.html)
 - [Runloop深入理解](https://blog.ibireme.com/2015/05/18/runloop/)
 
+
+### 2020-05
+
+> mv coding to Keep-Coding rep, leave this rep to add some pdf
+> and interview note.
+
+[Keep-Coding](https://github.com/usiege/Keep-Coding)
 
 ### 2020-04
 
